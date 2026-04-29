@@ -48,7 +48,7 @@ src/
 │       ├── ProfileDialog.tsx # Diálogo del perfil
 │       └── ProjectDialog.tsx # Diálogo de detalle de proyectos
 ├── data/
-│   └── profile.ts        # Datos del portafolio (editar aquí)
+│   └── profile.ts        # Datos del portafolio 
 └── types/
     └── index.ts          # Definiciones de tipos TypeScript
 ```
@@ -91,17 +91,7 @@ npm start
 
 ## Despliegue en Vercel
 
-```bash
-# Instala Vercel CLI
-npm i -g vercel
 
-# Despliega
-vercel
-```
-
-El proyecto está configurado para desplegarse automáticamente en Vercel conectando el repositorio de GitHub.
-
-URL esperada: `mariana-carvajal.vercel.app`
 
 ---
 
