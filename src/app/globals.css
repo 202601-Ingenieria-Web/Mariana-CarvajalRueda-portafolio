@@ -4,34 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Scrollbar personalizado para el portafolio horizontal */
 .scrollbar-thin::-webkit-scrollbar        { height: 4px; }
 .scrollbar-thin::-webkit-scrollbar-track  { background: #E6F1FB; border-radius: 4px; }
 .scrollbar-thin::-webkit-scrollbar-thumb  { background: #378ADD; border-radius: 4px; }
 
-/* Scroll vertical del sidebar */
 aside::-webkit-scrollbar       { width: 3px; }
 aside::-webkit-scrollbar-track { background: transparent; }
 aside::-webkit-scrollbar-thumb { background: #185FA5; border-radius: 3px; }
 
+/* MÓVIL: scroll normal */
 html, body {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  min-height: 100%;
   overflow-x: hidden;
-  overflow-y: auto;
 }
 
-/* Forzar scroll en móvil */
-@media (max-width: 767px) {
-  .flex-col > * {
-    flex-shrink: 0;
+/* DESKTOP: sin scroll global */
+@media (min-width: 768px) {
+  html, body {
+    height: 100%;
+    overflow: hidden;
   }
 }
