@@ -10,7 +10,7 @@ import MainContent from "@/components/organisms/MainContent";
  */
 export default function Home() {
   return (
-    <div className="flex flex-col md:flex-row md:h-screen bg-blue-50/20">
+    <div className="flex flex-col md:flex-row md:h-screen bg-blue-50/20" style={{ minHeight: '100dvh' }}>
       {/* Columna izquierda */}
       <LeftSidebar data={profileData} />
 

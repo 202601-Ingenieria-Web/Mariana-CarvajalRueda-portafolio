@@ -24,3 +24,16 @@ html, body {
     overflow: hidden;
   }
 }
+
+/* Forzar que el contenido sea visible en móvil */
+@media (max-width: 767px) {
+  html {
+    height: auto;
+    min-height: 100%;
+  }
+  body {
+    height: auto;
+    min-height: 100%;
+    overflow-y: scroll !important;
+  }
+}
