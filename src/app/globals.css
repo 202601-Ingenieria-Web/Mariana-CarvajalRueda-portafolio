@@ -14,21 +14,18 @@ aside::-webkit-scrollbar       { width: 3px; }
 aside::-webkit-scrollbar-track { background: transparent; }
 aside::-webkit-scrollbar-thumb { background: #185FA5; border-radius: 3px; }
 
-html, body {
+html {
   height: 100%;
 }
 
-/* Desktop: el scroll lo maneja el área central */
-@media (min-width: 768px) {
-  html, body {
-    overflow: hidden;
-  }
+body {
+  min-height: 100%;
+  overflow-x: hidden;
 }
 
-/* Móvil: scroll global vertical */
-@media (max-width: 767px) {
-  html, body {
-    overflow-y: auto;
-    overflow-x: hidden;
+@media (min-width: 768px) {
+  body {
+    height: 100%;
+    overflow: hidden;
   }
 }
