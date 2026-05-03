@@ -29,9 +29,9 @@ body {
   overflow-y: auto;
 }
 
-@media (min-width: 768px) {
-  html, body {
-    height: 100%;
-    overflow: hidden;
+/* Forzar scroll en móvil */
+@media (max-width: 767px) {
+  .flex-col > * {
+    flex-shrink: 0;
   }
 }

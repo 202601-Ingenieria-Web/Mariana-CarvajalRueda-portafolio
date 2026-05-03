@@ -19,7 +19,7 @@ export default function LeftSidebar({ data }: LeftSidebarProps) {
   const { t } = useLocale();
 
   return (
-    <aside className="w-full md:w-80 md:min-w-[320px] md:shrink-0 bg-blue-800 flex flex-col md:sticky md:top-0 md:h-screen md:overflow-y-auto">
+    <aside className="w-full md:w-80 md:min-w-[320px] md:shrink-0 bg-blue-800 flex flex-col md:sticky md:top-0 md:h-screen md:overflow-y-auto shrink-0">
 
       {/* ── Perfil: foto + nombre ── */}
       <div className="bg-blue-600 px-4 pt-6 pb-5 text-center border-b border-blue-800">
@@ -41,8 +41,7 @@ export default function LeftSidebar({ data }: LeftSidebarProps) {
       </div>
 
       {/* ── Bloques de información ── */}
-      {/* En móvil: grid de 2 columnas. En desktop: columna única */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:flex md:flex-col gap-3 p-3 flex-1">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:flex md:flex-col gap-3 p-3">
 
         {/* Contacto */}
         <SidebarBlock title={t.contact}>
